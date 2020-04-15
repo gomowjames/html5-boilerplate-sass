@@ -3,9 +3,14 @@
  * PAGE MAIN STYLE *
  *******************
 */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
 
 body {
-  background: $themeColor-Light;
+  padding-top: 56px;
+  background: #FFF;
   user-select: none;
 }
 
@@ -13,7 +18,7 @@ main {
 
   h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 200px;
+    font-size: 100px;
   }
 }
 
@@ -32,6 +37,23 @@ header {
       margin-left: 10px;
     }
   }
+}
+
+
+#logo-animate-1 {
+  background-color: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+	text-align: center;
+	
+	h3 {
+		padding: 2rem 0;
+	  svg {
+	    width: 20em;
+	  }
+	}
 }
 
 /* EXAMPLE SECTION */
